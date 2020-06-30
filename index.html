@@ -1,0 +1,29 @@
+<!-- 
+<script>
+  var isOnHTTPS = window.location.href.startsWith("https");
+  if (!isOnHTTPS) {
+    window.location.href = window.location.href.replace("http", "https");
+  }
+</script> -->
+<!doctype html>
+<html lang="en">
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+
+<!-- Be sure to use tfjs 1.7.4, in tfjs 2 they broke their own handpose model-->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core@1.7.4/dist/tf-core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter@1.7.4/dist/tf-converter.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose@0.0.4/dist/handpose.min.js"></script>
+<script defer src="sketch.js"></script>
+<p>
+  Click <a href="https://hand-interaction.glitch.me/">here</a> for single player interaction mode.
+</p>
+<!-- <script>
+// draw the FPS
+// ;;;(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()
+</script> -->
+
+</html>
