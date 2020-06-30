@@ -14,6 +14,10 @@ app.get(process.env.BASE,(request, response) => {
   response.sendFile(__dirname + "/views/index.html");
 });
 
+const listener = server.listen(port, () => {
+  console.log(`Server is listening on port ${listener.address().port}`);
+});
+
 var io = require("socket.io")(server);
 
 var serverData = {}; // everyone's data
